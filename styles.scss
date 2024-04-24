@@ -21,7 +21,7 @@ body {
 section, div {
   display: flex;
   flex-direction: column;
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 0 3rem;
 }
 
 nav {
@@ -201,7 +201,7 @@ h1, h4 {
 
 hr {
   border: 1px solid $primary-color;
-  width: 70vw;
+  width: 90vw;
   margin: 2rem auto 1rem auto;
 }
 
