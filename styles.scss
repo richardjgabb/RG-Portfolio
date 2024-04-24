@@ -1,5 +1,5 @@
 $background-color: #fffbec;
-$primary-color: rgba(4, 125, 89, 0.77);
+$primary-color: rgb(4, 125, 89);
 $secondary-color: rgba(178, 54, 37, 0.78);
 
 
@@ -15,7 +15,7 @@ html {
 body {
   background-color: $background-color;
   color: $primary-color;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 section, div {
@@ -52,6 +52,7 @@ nav {
   justify-content: center;
   h1 {
     font-size: 5rem;
+    color: $primary-color;
   }
   span {
     color: $secondary-color;
@@ -108,25 +109,23 @@ h1, h2 {
 }
 
 .projectSection {
-  flex-direction: row;
-  flex-wrap: wrap;
   gap: 2rem;
   .projectDiv {
     flex-direction: row;
     padding: 0;
     border-radius: 1rem;
-    overflow: hidden;
+    position: relative;
     }
     img {
-      width: 70%;
+      max-height: 25vh;
     }
     p {
-      position: relative;
-      right: 15rem;
-      top: 10rem;
-      height: fit-content;
       color: $background-color;
-      background-color: $secondary-color;
+      width: 40vw;
+      position: absolute;
+      right: 3rem;
+      bottom: 2rem;
+      background-color: $primary-color;
       border-radius: 1rem;
       padding: 1rem;
     }
