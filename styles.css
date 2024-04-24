@@ -10,20 +10,20 @@ html {
 body {
   background-color: #fffbec;
   color: #047d59;
+  font-size: 3rem;
 }
 
 section, div {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  font-size: 20px;
 }
 
 nav {
   position: sticky;
   padding: 1rem;
   top: 2vh;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   background-color: #047d59;
   color: #fffbec;
   border-radius: 1rem;
@@ -37,7 +37,7 @@ nav .link {
 }
 
 .titleHeader {
-  height: 70vh;
+  height: 95vh;
   justify-content: center;
 }
 .titleHeader .nameTitle {
@@ -53,7 +53,7 @@ h1, h2, h4 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 5rem;
   overflow: hidden;
   border-right: 0.15em solid #b23625;
   white-space: nowrap;
@@ -79,19 +79,22 @@ h1 {
 .iconLinks {
   flex-direction: row;
   padding: 0;
-  gap: 0.5rem;
-  text-align: center;
+  gap: 1rem;
+  align-items: center;
   line-height: 2.2rem;
 }
 
-.aboutBackground {
+.aboutSection {
+  gap: 2rem;
+}
+.aboutSection .aboutBackground {
   background-image: url("img/photo.JPG");
   height: 80vh;
   background-size: cover;
   background-position: 0 -100px;
   border-radius: 1rem;
 }
-.aboutBackground p {
+.aboutSection .aboutBackground p {
   padding: 1rem;
   text-align: center;
   background-color: rgba(255, 251, 236, 0.56);
@@ -137,8 +140,7 @@ h1 {
 .socialsIcons, .contactIcons {
   background-color: #047d59;
   color: #fffbec;
-  height: 2rem;
-  width: 2rem;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 
@@ -154,9 +156,6 @@ h1 {
 }
 .contactSection div {
   margin-left: 1rem;
-}
-.contactSection .contactSocialIcons {
-  margin-left: 3.3rem;
 }
 
 .link {
@@ -180,6 +179,12 @@ h1 {
 
 .link:hover {
   cursor: pointer;
+}
+
+hr {
+  border: 1px solid #047d59;
+  width: 70vw;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
