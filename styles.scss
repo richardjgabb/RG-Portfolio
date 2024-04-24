@@ -21,7 +21,7 @@ body {
 section, div {
   display: flex;
   flex-direction: column;
-  padding: 1rem 3rem 0 3rem;
+  padding: 1rem 3rem 0;
 }
 
 nav {
@@ -50,6 +50,9 @@ nav {
 .titleHeader {
   height: 85vh;
   justify-content: center;
+  div {
+    padding-left: 0;
+  }
   h1 {
     font-size: 2.5rem;
     color: $primary-color;
