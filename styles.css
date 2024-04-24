@@ -1,0 +1,185 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffbec;
+  color: #047d59;
+}
+
+section, div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-size: 20px;
+}
+
+nav {
+  position: sticky;
+  padding: 1rem;
+  top: 2vh;
+  margin: 0 auto;
+  background-color: #047d59;
+  color: #fffbec;
+  border-radius: 1rem;
+  width: fit-content;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}
+nav .link {
+  color: #fffbec;
+}
+
+.titleHeader {
+  height: 70vh;
+  justify-content: center;
+}
+.titleHeader .nameTitle {
+  width: fit-content;
+  padding: 0;
+}
+.titleHeader span {
+  color: #b23625;
+}
+
+h1, h2, h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 32px;
+  overflow: hidden;
+  border-right: 0.15em solid #b23625;
+  white-space: nowrap;
+  animation: typing 1.3s steps(12, end), blink-caret 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #b23625;
+  }
+}
+.iconLinks {
+  flex-direction: row;
+  padding: 0;
+  gap: 0.5rem;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+.aboutBackground {
+  background-image: url("img/photo.JPG");
+  height: 80vh;
+  background-size: cover;
+  background-position: 0 -100px;
+  border-radius: 1rem;
+}
+.aboutBackground p {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(255, 251, 236, 0.56);
+  border-radius: 1rem;
+}
+
+.projectSection {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.projectSection .projectBackground {
+  border: 1px solid #047d59;
+  border-radius: 1rem;
+}
+.projectSection .projectCard {
+  height: 100%;
+  width: 100%;
+  background-color: #fffbec;
+  border-radius: 0.5rem;
+  border: solid 1px #047d59;
+}
+.projectSection .foodDelivery {
+  background-image: url("img/foodDelivery.png");
+}
+.projectSection .notesApp {
+  background-image: url("img/notes.png");
+}
+.projectSection .bureauScorer {
+  background-image: url("img/bureau.png");
+}
+.projectSection .collectionApp {
+  background-image: url("img/collectionApp.png");
+}
+.projectSection .memoryGame {
+  background-image: url("img/memoryGame.png");
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.socialsIcons, .contactIcons {
+  background-color: #047d59;
+  color: #fffbec;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.socialsIcons:hover {
+  background-color: #fffbec;
+  color: #047d59;
+  border: solid 1px #047d59;
+  scale: 1.2;
+}
+
+.contactSection {
+  gap: 1.5rem;
+}
+.contactSection div {
+  margin-left: 1rem;
+}
+.contactSection .contactSocialIcons {
+  margin-left: 3.3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #047d59;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #b23625;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.link:hover::after {
+  width: 70%;
+  left: 0;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

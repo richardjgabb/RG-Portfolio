@@ -1,0 +1,187 @@
+$background-color: #fffbec;
+$primary-color: #047d59;
+$secondary-color: #b23625;
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color;
+  color: $primary-color;
+}
+
+section, div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-size: 20px;
+}
+
+nav {
+  position: sticky;
+  padding: 1rem;
+  top: 2vh;
+  margin: 0 auto;
+  background-color: $primary-color;
+  color: $background-color;
+  border-radius: 1rem;
+  width: fit-content;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  .link {
+    color: $background-color;
+  }
+}
+
+.titleHeader {
+  height: 70vh;
+  justify-content: center;
+  .nameTitle {
+    width: fit-content;
+    padding: 0;
+  }
+  span {
+    color: $secondary-color;
+  }
+}
+
+h1, h2, h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 32px;
+  overflow: hidden;
+  border-right: .15em solid $secondary-color;
+  white-space: nowrap;
+  animation:
+    typing 1.3s steps(12, end),
+    blink-caret 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $secondary-color; }
+}
+
+.iconLinks {
+  flex-direction: row;
+  padding: 0;
+  gap: 0.5rem;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+.aboutBackground {
+  background-image: url("img/photo.JPG");
+  height: 80vh;
+  background-size: cover;
+  background-position: 0 -100px;
+  border-radius: 1rem;
+  p {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(255, 251, 236, 0.56);
+    border-radius: 1rem;
+  }
+}
+
+.projectSection {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .projectBackground {
+    border: 1px solid $primary-color;
+    border-radius: 1rem;
+  }
+  .projectCard {
+    height: 100%;
+    width: 100%;
+    background-color: $background-color;
+    border-radius: 0.5rem;
+    border: solid 1px $primary-color;
+  }
+  .foodDelivery {
+    background-image: url("img/foodDelivery.png");
+  }
+  .notesApp {
+    background-image: url("img/notes.png");
+  }
+  .bureauScorer {
+    background-image: url("img/bureau.png");
+  }
+  .collectionApp {
+    background-image: url("img/collectionApp.png");
+  }
+  .memoryGame {
+    background-image: url("img/memoryGame.png");
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.socialsIcons, .contactIcons {
+  background-color: $primary-color;
+  color: $background-color;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.socialsIcons:hover {
+  background-color: $background-color;
+  color: $primary-color;
+  border: solid 1px $primary-color;
+  scale: 1.2;
+}
+
+.contactSection {
+  gap: 1.5rem;
+  div {
+    margin-left: 1rem;
+  }
+  .contactSocialIcons {
+    margin-left: 3.3rem;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $primary-color;
+}
+.link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: $secondary-color;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.link:hover::after {
+  width: 70%;
+  left: 0;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+
+
+
