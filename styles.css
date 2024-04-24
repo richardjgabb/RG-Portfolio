@@ -112,7 +112,7 @@ h1, h2 {
 }
 
 .projectSection {
-  gap: 2rem;
+  gap: 4rem;
 }
 .projectSection .projectDiv {
   flex-direction: row;
