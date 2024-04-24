@@ -59,9 +59,8 @@ h1, h2, h4 {
 
 h1, h2 {
   overflow: hidden;
-  border-right: 0.15em solid #b23625;
   white-space: nowrap;
-  animation: typing 1.3s steps(12, end), blink-caret 0.8s step-end infinite;
+  animation: typing 1.3s steps(12, end);
 }
 
 @keyframes typing {
@@ -70,14 +69,6 @@ h1, h2 {
   }
   to {
     width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #b23625;
   }
 }
 .iconLinks {

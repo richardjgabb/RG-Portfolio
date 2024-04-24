@@ -64,21 +64,14 @@ h1, h2, h4 {
 
 h1, h2 {
   overflow: hidden;
-  border-right: .15em solid $secondary-color;
   white-space: nowrap;
   animation:
-    typing 1.3s steps(12, end),
-    blink-caret 0.8s step-end infinite;
+    typing 1.3s steps(12, end)
 }
 
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $secondary-color; }
 }
 
 .iconLinks {
