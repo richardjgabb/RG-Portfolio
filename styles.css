@@ -21,6 +21,7 @@ section, div {
 
 nav {
   position: sticky;
+  z-index: 10;
   padding: 1rem;
   top: 2vh;
   margin: 0 auto 2rem auto;
@@ -37,7 +38,7 @@ nav .link {
 }
 
 .titleHeader {
-  height: 95vh;
+  height: 92vh;
   justify-content: center;
 }
 .titleHeader .nameTitle {
@@ -89,9 +90,8 @@ h1 {
 }
 .aboutSection .aboutBackground {
   background-image: url("img/photo.JPG");
-  height: 80vh;
+  height: 70vh;
   background-size: cover;
-  background-position: 0 -100px;
   border-radius: 1rem;
 }
 .aboutSection .aboutBackground p {
@@ -106,35 +106,23 @@ h1 {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.projectSection .projectBackground {
-  border: 1px solid #047d59;
+.projectSection .projectDiv {
+  flex-direction: row;
+  padding: 0;
+  align-items: flex-end;
   border-radius: 1rem;
 }
-.projectSection .projectCard {
-  height: 100%;
-  width: 100%;
-  background-color: #fffbec;
-  border-radius: 0.5rem;
-  border: solid 1px #047d59;
+.projectSection .projectDiv img {
+  width: 70vw;
 }
-.projectSection .foodDelivery {
-  background-image: url("img/foodDelivery.png");
-}
-.projectSection .notesApp {
-  background-image: url("img/notes.png");
-}
-.projectSection .bureauScorer {
-  background-image: url("img/bureau.png");
-}
-.projectSection .collectionApp {
-  background-image: url("img/collectionApp.png");
-}
-.projectSection .memoryGame {
-  background-image: url("img/memoryGame.png");
-}
-
-.hidden {
-  visibility: hidden;
+.projectSection .projectDiv p {
+  position: relative;
+  bottom: 5rem;
+  right: 5rem;
+  color: #fffbec;
+  background-color: rgba(178, 54, 37, 0.45);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .socialsIcons, .contactIcons {
