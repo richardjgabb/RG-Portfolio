@@ -37,13 +37,17 @@ nav .link {
   color: #fffbec;
 }
 
-.titleHeader {
-  height: 92vh;
-  justify-content: center;
-}
-.titleHeader .nameTitle {
+.nameTitle {
   width: fit-content;
   padding: 0;
+}
+
+.titleHeader {
+  height: 95vh;
+  justify-content: center;
+}
+.titleHeader h1 {
+  font-size: 5rem;
 }
 .titleHeader span {
   color: #b23625;
@@ -53,8 +57,7 @@ h1, h2, h4 {
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 5rem;
+h1, h2 {
   overflow: hidden;
   border-right: 0.15em solid #b23625;
   white-space: nowrap;
@@ -99,6 +102,15 @@ h1 {
   text-align: center;
   background-color: rgba(255, 251, 236, 0.56);
   border-radius: 1rem;
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
 }
 
 .projectSection {

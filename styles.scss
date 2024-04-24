@@ -42,12 +42,16 @@ nav {
   }
 }
 
+.nameTitle {
+  width: fit-content;
+  padding: 0;
+}
+
 .titleHeader {
-  height: 92vh;
+  height: 95vh;
   justify-content: center;
-  .nameTitle {
-    width: fit-content;
-    padding: 0;
+  h1 {
+    font-size: 5rem;
   }
   span {
     color: $secondary-color;
@@ -58,8 +62,7 @@ h1, h2, h4 {
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 5rem;
+h1, h2 {
   overflow: hidden;
   border-right: .15em solid $secondary-color;
   white-space: nowrap;
@@ -100,6 +103,15 @@ h1 {
       border-radius: 1rem;
     }
   }
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
 }
 
 .projectSection {
