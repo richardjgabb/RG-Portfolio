@@ -15,7 +15,7 @@ html {
 body {
   background-color: $background-color;
   color: $primary-color;
-  font-size: 2.8rem;
+  font-size: 1rem;
 }
 
 section, div {
@@ -48,19 +48,15 @@ nav {
 }
 
 .titleHeader {
-  height: 95vh;
+  height: 90vh;
   justify-content: center;
   h1 {
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: $primary-color;
   }
   span {
     color: $secondary-color;
   }
-}
-
-h1, h2, h4 {
-  margin-bottom: 1rem;
 }
 
 h1, h2 {
@@ -78,31 +74,31 @@ h1, h2 {
 .iconLinks {
   flex-direction: row;
   padding: 0;
-  gap: 1rem;
   align-items: center;
-  line-height: 2.8rem;
+  gap: 1rem;
+}
+
+h1, h4 {
+  margin-bottom: 0.5rem;
 }
 
 .aboutSection {
   gap: 2rem;
   .aboutContents {
+    padding: 0;
+    border-radius: 1rem;
     position: relative;
-    .img {
-      height: 70vh;
+    p {
+      position: absolute;
+      top: 3rem;
+      left: 10%;
+      margin: 0 auto;
+      width: 80%;
+      padding: 1rem;
+      text-align: center;
+      background-color: rgba(255, 251, 236, 0.56);
       border-radius: 1rem;
     }
-  }
-
-  p {
-    position: absolute;
-    top: 4rem;
-    left: 10%;
-    margin: 0 auto;
-    width: 80%;
-    padding: 1rem;
-    text-align: center;
-    background-color: rgba(255, 251, 236, 0.56);
-    border-radius: 1rem;
   }
 }
 
@@ -116,7 +112,7 @@ h1, h2 {
 }
 
 .projectSection {
-  gap: 4rem;
+  gap: 2rem;
   .projectDiv {
     flex-direction: row;
     padding: 0;
@@ -124,7 +120,7 @@ h1, h2 {
     overflow: hidden;
     }
     img {
-      max-height: 25vh;
+      max-width: 70vw;
       border-radius: 1rem;
     }
     p {
@@ -132,8 +128,8 @@ h1, h2 {
       z-index: 1;
       width: 40vw;
       position: absolute;
-      right: 3rem;
-      bottom: 2rem;
+      right: 1rem;
+      bottom: 1rem;
       background-color: $primary-color;
       border-radius: 1rem;
       padding: 1rem;
@@ -162,20 +158,18 @@ h1, h2 {
   color: $background-color;
   padding: 0.5rem;
   border-radius: 50%;
+  line-height: 1.1rem;
 }
 
 .socialsIcons:hover {
   background-color: $background-color;
   color: $primary-color;
   border: solid 1px $primary-color;
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .contactSection {
-  gap: 1.5rem;
-  div {
-    margin-left: 1rem;
-  }
+  gap: 1rem;
 }
 
 .link {
@@ -208,13 +202,10 @@ hr {
 
 @media screen and (min-width: 750px) {
   body {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .iconLinks {
-    line-height: 2rem;
-    .socialsIcons {
-      padding: 0.5rem;
-    }
+    line-height: 1.5rem;
   }
   .aboutContents {
     flex-direction: row;
@@ -225,7 +216,7 @@ hr {
       max-width: 40%;
     }
     p {
-      position: static;
+      position: static !important;
       width: 50%;
     }
   }
@@ -243,6 +234,16 @@ hr {
       height: fit-content;
     }
   }
+
+  .contactSection {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .titleHeader {
+    align-items: center;
+  }
+
 }
 
 @media(prefers-reduced-motion) {

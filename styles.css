@@ -10,7 +10,7 @@ html {
 body {
   background-color: #fffbec;
   color: rgb(4, 125, 89);
-  font-size: 2.8rem;
+  font-size: 1rem;
 }
 
 section, div {
@@ -43,19 +43,15 @@ nav .link {
 }
 
 .titleHeader {
-  height: 95vh;
+  height: 90vh;
   justify-content: center;
 }
 .titleHeader h1 {
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: rgb(4, 125, 89);
 }
 .titleHeader span {
   color: rgba(178, 54, 37, 0.78);
-}
-
-h1, h2, h4 {
-  margin-bottom: 1rem;
 }
 
 h1, h2 {
@@ -75,24 +71,25 @@ h1, h2 {
 .iconLinks {
   flex-direction: row;
   padding: 0;
-  gap: 1rem;
   align-items: center;
-  line-height: 2.8rem;
+  gap: 1rem;
+}
+
+h1, h4 {
+  margin-bottom: 0.5rem;
 }
 
 .aboutSection {
   gap: 2rem;
 }
 .aboutSection .aboutContents {
+  padding: 0;
+  border-radius: 1rem;
   position: relative;
 }
-.aboutSection .aboutContents .img {
-  height: 70vh;
-  border-radius: 1rem;
-}
-.aboutSection p {
+.aboutSection .aboutContents p {
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   left: 10%;
   margin: 0 auto;
   width: 80%;
@@ -112,7 +109,7 @@ h1, h2 {
 }
 
 .projectSection {
-  gap: 4rem;
+  gap: 2rem;
 }
 .projectSection .projectDiv {
   flex-direction: row;
@@ -121,7 +118,7 @@ h1, h2 {
   overflow: hidden;
 }
 .projectSection img {
-  max-height: 25vh;
+  max-width: 70vw;
   border-radius: 1rem;
 }
 .projectSection p {
@@ -129,8 +126,8 @@ h1, h2 {
   z-index: 1;
   width: 40vw;
   position: absolute;
-  right: 3rem;
-  bottom: 2rem;
+  right: 1rem;
+  bottom: 1rem;
   background-color: rgb(4, 125, 89);
   border-radius: 1rem;
   padding: 1rem;
@@ -156,20 +153,18 @@ h1, h2 {
   color: #fffbec;
   padding: 0.5rem;
   border-radius: 50%;
+  line-height: 1.1rem;
 }
 
 .socialsIcons:hover {
   background-color: #fffbec;
   color: rgb(4, 125, 89);
   border: solid 1px rgb(4, 125, 89);
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .contactSection {
-  gap: 1.5rem;
-}
-.contactSection div {
-  margin-left: 1rem;
+  gap: 1rem;
 }
 
 .link {
@@ -203,13 +198,10 @@ hr {
 
 @media screen and (min-width: 750px) {
   body {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .iconLinks {
-    line-height: 2rem;
-  }
-  .iconLinks .socialsIcons {
-    padding: 0.5rem;
+    line-height: 1.5rem;
   }
   .aboutContents {
     flex-direction: row;
@@ -221,7 +213,7 @@ hr {
     max-width: 40%;
   }
   .aboutContents p {
-    position: static;
+    position: static !important;
     width: 50%;
   }
   .projectDiv {
@@ -237,6 +229,13 @@ hr {
   .projectDiv p {
     position: static;
     height: fit-content;
+  }
+  .contactSection {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .titleHeader {
+    align-items: center;
   }
 }
 @media (prefers-reduced-motion) {
