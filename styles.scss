@@ -29,7 +29,7 @@ nav {
   z-index: 10;
   padding: 1rem;
   top: 2vh;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 10vh auto;
   background-color: $primary-color;
   color: $background-color;
   border-radius: 1rem;
@@ -48,7 +48,7 @@ nav {
 }
 
 .titleHeader {
-  height: 90vh;
+  height: 80vh;
   justify-content: center;
   h1 {
     font-size: 2.5rem;
@@ -117,7 +117,6 @@ h1, h4 {
     flex-direction: row;
     padding: 0;
     position: relative;
-    overflow: hidden;
     }
     img {
       max-width: 70vw;
@@ -129,7 +128,7 @@ h1, h4 {
       width: 40vw;
       position: absolute;
       right: 1rem;
-      bottom: 1rem;
+      top: 3rem;
       background-color: $primary-color;
       border-radius: 1rem;
       padding: 1rem;
@@ -158,7 +157,7 @@ h1, h4 {
   color: $background-color;
   padding: 0.5rem;
   border-radius: 50%;
-  line-height: 1.1rem;
+  line-height: 0.8rem;
 }
 
 .socialsIcons:hover {
