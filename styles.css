@@ -10,7 +10,7 @@ html {
 body {
   background-color: #fffbec;
   color: rgb(4, 125, 89);
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 section, div {
@@ -77,7 +77,7 @@ h1, h2 {
   padding: 0;
   gap: 1rem;
   align-items: center;
-  line-height: 2.2rem;
+  line-height: 2.8rem;
 }
 
 .aboutSection {
@@ -117,15 +117,16 @@ h1, h2 {
 .projectSection .projectDiv {
   flex-direction: row;
   padding: 0;
-  border-radius: 1rem;
   position: relative;
   overflow: hidden;
 }
 .projectSection img {
   max-height: 25vh;
+  border-radius: 1rem;
 }
 .projectSection p {
   color: #fffbec;
+  z-index: 1;
   width: 40vw;
   position: absolute;
   right: 3rem;
@@ -200,14 +201,15 @@ hr {
   margin: 0 auto;
 }
 
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-}
 @media screen and (min-width: 750px) {
   body {
-    font-size: 26px;
+    font-size: 2rem;
+  }
+  .iconLinks {
+    line-height: 2rem;
+  }
+  .iconLinks .socialsIcons {
+    padding: 0.5rem;
   }
   .aboutContents {
     flex-direction: row;
@@ -235,6 +237,11 @@ hr {
   .projectDiv p {
     position: static;
     height: fit-content;
+  }
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }
 
