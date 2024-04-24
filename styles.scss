@@ -21,7 +21,7 @@ body {
 section, div {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem 3rem;
 }
 
 nav {
@@ -29,7 +29,7 @@ nav {
   z-index: 10;
   padding: 1rem;
   top: 2vh;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 8vh auto;
   background-color: $primary-color;
   color: $background-color;
   border-radius: 1rem;
@@ -66,6 +66,10 @@ h1, h2 {
     typing 1.3s steps(12, end)
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -86,11 +90,13 @@ h1, h4 {
   gap: 2rem;
   .aboutContents {
     padding: 0;
-    border-radius: 1rem;
     position: relative;
+    img {
+      border-radius: 1rem;
+    }
     p {
       position: absolute;
-      top: 3rem;
+      top: 2rem;
       left: 10%;
       margin: 0 auto;
       width: 80%;
@@ -119,13 +125,13 @@ h1, h4 {
     position: relative;
     }
     img {
-      max-width: 70vw;
+      max-width: 65vw;
       border-radius: 1rem;
     }
     p {
       color: $background-color;
       z-index: 1;
-      width: 40vw;
+      width: 45vw;
       position: absolute;
       right: 1rem;
       top: 3rem;
@@ -196,7 +202,7 @@ h1, h4 {
 hr {
   border: 1px solid $primary-color;
   width: 70vw;
-  margin: 0 auto;
+  margin: 2rem auto 1rem auto;
 }
 
 @media screen and (min-width: 750px) {
