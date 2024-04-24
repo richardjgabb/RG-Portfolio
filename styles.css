@@ -109,20 +109,36 @@ h1 {
 .projectSection .projectDiv {
   flex-direction: row;
   padding: 0;
-  align-items: flex-end;
   border-radius: 1rem;
+  overflow: hidden;
 }
-.projectSection .projectDiv img {
+.projectSection img {
   width: 70vw;
 }
-.projectSection .projectDiv p {
+.projectSection p {
   position: relative;
-  bottom: 5rem;
   right: 5rem;
+  top: 10rem;
+  height: fit-content;
   color: #fffbec;
   background-color: rgba(178, 54, 37, 0.45);
   border-radius: 1rem;
   padding: 1rem;
+}
+.projectSection .hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+.projectSection .projectImage {
+  transform: translateX(-80%);
+  transition-delay: 400ms;
+}
+.projectSection .projectText {
+  transform: translateX(80%);
+}
+.projectSection .slideIn {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .socialsIcons, .contactIcons {
@@ -173,6 +189,12 @@ hr {
   border: 1px solid #047d59;
   width: 70vw;
   margin: 0 auto;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

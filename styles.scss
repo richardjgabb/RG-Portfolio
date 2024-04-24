@@ -109,20 +109,38 @@ h1 {
   .projectDiv {
     flex-direction: row;
     padding: 0;
-    align-items: flex-end;
     border-radius: 1rem;
+    overflow: hidden;
+    }
     img {
       width: 70vw;
     }
     p {
       position: relative;
-      bottom: 5rem;
       right: 5rem;
+      top: 10rem;
+      height: fit-content;
       color: $background-color;
       background-color: rgba(178, 54, 37, 0.45);
       border-radius: 1rem;
       padding: 1rem;
     }
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .projectImage {
+    transform: translateX(-80%);
+    transition-delay: 400ms;
+  }
+  .projectText {
+    transform: translateX(80%);
+  }
+
+  .slideIn{
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -175,5 +193,10 @@ hr {
   margin: 0 auto;
 }
 
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
 
 

@@ -1,12 +1,14 @@
-const transparentCards = document.querySelectorAll('.hidden')
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('slideIn');
+        } else {
+            entry.target.classList.remove('slideIn');
+        }
+    })
+})
 
-transparentCards.forEach(card => {
-    card.addEventListener('mouseover', () => {
-        card.classList.remove('hidden');
-        console.log('moused')
-    })
-    card.addEventListener('mouseout', () => {
-        card.classList.add('hidden');
-        console.log('moused')
-    })
+const projectImage = document.querySelectorAll('.hidden');
+projectImage.forEach(card => {
+    observer.observe(card);
 })
