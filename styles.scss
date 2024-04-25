@@ -21,7 +21,10 @@ body {
 section, div {
   display: flex;
   flex-direction: column;
-  padding: 1rem 3rem 0;
+}
+
+section {
+  padding: 1rem;
 }
 
 nav {
@@ -105,6 +108,7 @@ h1, h4 {
     p {
       position: absolute;
       top: 2rem;
+      font-weight: bold;
       left: 10%;
       margin: 0 auto;
       width: 80%;
