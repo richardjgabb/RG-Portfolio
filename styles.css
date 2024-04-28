@@ -230,7 +230,8 @@ hr {
   }
   .aboutContents p {
     position: static !important;
-    width: 50%;
+    padding: 2rem !important;
+    width: 50% !important;
   }
   .projectDiv {
     flex-direction: row;
